@@ -1,0 +1,2993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gurpreet Singh | Digital Marketing Portfolio</title>
+
+<meta name="description"
+content="Gurpreet Singh Digital Marketing Portfolio covering SEO, Google Ads, Social Media Marketing, Email Marketing, Shopify and Analytics.">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+:root{
+    --bg:#07110c;
+    --bg2:#0a160f;
+    --card:#0e1b14;
+    --card2:#12231a;
+    --text:#edf7ef;
+    --muted:#a7b8ac;
+    --green:#8ee28e;
+    --green2:#4fbf72;
+    --line:#294333;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+.container{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    padding:0 24px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,17,12,.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav{
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:900;
+}
+
+.logo span{
+    color:var(--green);
+}
+
+.links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.links a{
+    color:var(--muted);
+    font-size:14px;
+    transition:.3s;
+}
+
+.links a:hover{
+    color:var(--green);
+}
+
+.menu{
+    display:none;
+    font-size:27px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:125px 0 75px;
+
+    background:
+    radial-gradient(
+        circle at 80% 25%,
+        rgba(79,191,114,.18),
+        transparent 30%
+    ),
+    radial-gradient(
+        circle at 15% 75%,
+        rgba(142,226,142,.08),
+        transparent 30%
+    );
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:60px;
+    align-items:center;
+}
+
+.eyebrow{
+    display:inline-block;
+    color:var(--green);
+    border:1px solid #31523c;
+    background:#0d2115;
+    padding:7px 13px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+h1{
+    font-size:clamp(48px,7vw,82px);
+    line-height:1.02;
+    margin:22px 0;
+}
+
+h1 span{
+    color:var(--green);
+}
+
+.hero p{
+    font-size:19px;
+    color:var(--muted);
+    max-width:700px;
+}
+
+.btns{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 21px;
+    border-radius:8px;
+    background:var(--green);
+    color:#07110c;
+    font-weight:800;
+    border:1px solid var(--green);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(142,226,142,.15);
+}
+
+.btn.alt{
+    background:transparent;
+    color:var(--text);
+    border-color:var(--line);
+}
+
+.btn.alt:hover{
+    border-color:var(--green);
+    color:var(--green);
+}
+
+.hero-card{
+    background:linear-gradient(
+        145deg,
+        var(--card2),
+        var(--card)
+    );
+    border:1px solid var(--line);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.profile-img{
+    width:145px;
+    height:145px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:0 auto 20px;
+    border:3px solid var(--green);
+    background:#14271b;
+}
+
+.hero-card .big{
+    font-size:52px;
+    color:var(--green);
+    font-weight:900;
+}
+
+.hero-card p{
+    font-size:14px;
+    margin:auto;
+}
+
+.mini{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:20px;
+}
+
+.mini div{
+    border:1px solid var(--line);
+    padding:14px;
+    border-radius:10px;
+    background:#0b1710;
+    font-size:13px;
+    color:var(--muted);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    padding:95px 0;
+    border-top:1px solid #14251b;
+}
+
+.label{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--green);
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.intro{
+    color:var(--muted);
+    max-width:800px;
+    margin-bottom:40px;
+}
+
+.about-grid,
+.case-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:25px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.muted{
+    color:var(--muted);
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.skill{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:22px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    border-color:#42684d;
+}
+
+.skill .icon{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.skill p{
+    font-size:14px;
+    color:var(--muted);
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:15px;
+}
+
+.tag{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:20px;
+    background:#12261a;
+    border:1px solid #284a34;
+    color:#bfe9c2;
+}
+
+/* =========================
+   CASE STUDY
+========================= */
+
+.case{
+    background:linear-gradient(
+        180deg,
+        #0d1912,
+        #09130d
+    );
+
+    border:1px solid var(--line);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:28px;
+}
+
+.case-head{
+    padding:25px;
+    background:#102218;
+    border-bottom:1px solid var(--line);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.case-head h3{
+    font-size:26px;
+}
+
+.case-head span{
+    font-size:11px;
+    color:var(--green);
+    border:1px solid #31523c;
+    padding:5px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+}
+
+.case-body{
+    padding:28px;
+}
+
+.case ul{
+    padding-left:20px;
+    color:var(--muted);
+}
+
+.case li{
+    margin:7px 0;
+}
+
+.proof{
+    margin-top:28px;
+}
+
+.proof h4{
+    margin-bottom:13px;
+    color:#d9f1dc;
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.proof-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+/* IMAGE CARD */
+
+.proof-image{
+    height:220px;
+    overflow:hidden;
+    border-radius:13px;
+    border:1px solid var(--line);
+    background:#09130d;
+    position:relative;
+    cursor:pointer;
+}
+
+/* ACTUAL IMAGE */
+
+.proof-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:
+        transform .4s ease,
+        opacity .4s ease,
+        filter .4s ease;
+}
+
+/* HOVER EFFECT */
+
+.proof-image:hover img{
+    transform:scale(1.08);
+    opacity:.72;
+    filter:brightness(.8);
+}
+
+.proof-image:hover{
+    border-color:var(--green);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.4);
+}
+
+/* IMAGE LABEL */
+
+.image-label{
+    position:absolute;
+    left:10px;
+    right:10px;
+    bottom:10px;
+
+    padding:9px 11px;
+
+    border-radius:8px;
+
+    background:rgba(7,17,12,.90);
+
+    font-size:12px;
+    color:#dff3e2;
+
+    border:1px solid rgba(142,226,142,.15);
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.timeline{
+    display:grid;
+    gap:15px;
+}
+
+.step{
+    display:grid;
+    grid-template-columns:60px 1fr;
+    gap:18px;
+    align-items:start;
+}
+
+.num{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+
+    background:#16341f;
+    color:var(--green);
+
+    font-weight:900;
+
+    border:1px solid #31523c;
+}
+
+/* =========================
+   TOOLS
+========================= */
+
+.tools{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tool{
+    padding:11px 15px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:8px;
+    color:#cde9d1;
+    font-size:14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.resume{
+    background:#102219;
+}
+
+.resume-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.contact{
+    text-align:center;
+    background:
+    linear-gradient(
+        145deg,
+        #10271a,
+        #0a160e
+    );
+}
+
+.contact .intro{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:28px 0;
+    color:#82948a;
+    text-align:center;
+    font-size:13px;
+}
+
+.note{
+    font-size:12px;
+    color:#8fa395;
+    margin-top:18px;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#top{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+
+    display:none;
+
+    border:0;
+    background:var(--green);
+    color:#07110c;
+
+    width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    font-size:18px;
+    cursor:pointer;
+
+    z-index:900;
+}
+
+/* =========================
+   FULLSCREEN IMAGE VIEWER
+========================= */
+
+.modal{
+    display:none;
+
+    position:fixed;
+    z-index:5000;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    align-items:center;
+    justify-content:center;
+
+    padding:30px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal img{
+    max-width:94vw;
+    max-height:88vh;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 20px 80px rgba(0,0,0,.8);
+}
+
+.close{
+    position:absolute;
+
+    right:25px;
+    top:12px;
+
+    font-size:42px;
+
+    color:white;
+
+    cursor:pointer;
+
+    z-index:10;
+}
+
+.modal-caption{
+    position:absolute;
+
+    bottom:15px;
+
+    color:#ddd;
+
+    font-size:13px;
+
+    background:rgba(0,0,0,.5);
+
+    padding:5px 12px;
+
+    border-radius:20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
+
+    .hero-grid,
+    .about-grid,
+    .case-grid,
+    .resume-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .proof-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .links{
+        display:none;
+
+        position:absolute;
+
+        top:72px;
+        left:0;
+
+        width:100%;
+
+        padding:20px;
+
+        background:#08120d;
+
+        flex-direction:column;
+    }
+
+    .links.open{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+}
+
+@media(max-width:520px){
+
+    h1{
+        font-size:48px;
+    }
+
+    .title{
+        font-size:34px;
+    }
+
+    .skills,
+    .proof-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-card{
+        margin-top:10px;
+    }
+
+    .case-head{
+        display:block;
+    }
+
+    .case-head span{
+        display:inline-block;
+        margin-top:12px;
+    }
+
+    .proof-image{
+        height:240px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+<div class="container nav">
+
+<a class="logo" href="#home">
+Gurpreet<span>.</span>
+</a>
+
+<ul class="links" id="links">
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#skills">Skills</a>
+</li>
+
+<li>
+<a href="#projects">Projects</a>
+</li>
+
+<li>
+<a href="#process">Process</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+<div
+class="menu"
+onclick="document.getElementById('links').classList.toggle('open')">
+
+☰
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header
+class="hero"
+id="home">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="eyebrow">
+DIGITAL MARKETING • FRESHER
+</span>
+
+<h1>
+I turn digital channels into
+<span>growth.</span>
+</h1>
+
+<p>
+
+I’m Gurpreet Singh, a Digital Marketing fresher with
+practical project experience in SEO, Google Ads,
+Social Media, Email Marketing, Shopify and Analytics.
+
+</p>
+
+<div class="btns">
+
+<a
+class="btn"
+href="#projects">
+
+View My Work
+
+</a>
+
+<a
+class="btn alt"
+href="#contact">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<!-- =========================
+     PROFILE IMAGE
+     CHANGE THIS FILE
+========================= -->
+
+<img
+class="profile-img"
+src="images/garrysarari.png"
+alt="Gurpreet Singh profile photo"
+>
+
+<div class="big">
+360°
+</div>
+
+<h3>
+Digital Marketing
+</h3>
+
+<p>
+
+A practical e-commerce growth project
+built around EcoNest.
+
+</p>
+
+<div class="mini">
+
+<div>
+<strong>SEO</strong>
+<br>
+On-page + Off-page
+</div>
+
+<div>
+<strong>SEM</strong>
+<br>
+Google Ads
+</div>
+
+<div>
+<strong>Social</strong>
+<br>
+Content Strategy
+</div>
+
+<div>
+<strong>Email</strong>
+<br>
+Campaigns + Automation
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="label">
+01 — About Me
+</div>
+
+<h2 class="title">
+A fresher focused on practical marketing.
+</h2>
+
+<p class="intro">
+
+I have completed an Advanced Digital Marketing course
+and built hands-on projects to understand how marketing
+channels work together. My focus is on research,
+execution, measurement and continuous optimisation.
+
+</p>
+
+<div class="about-grid">
+
+<div class="card">
+
+<h3>
+Career Goal
+</h3>
+
+<p class="muted">
+
+To start my career in a Digital Marketing internship
+or entry-level role where I can contribute to SEO,
+paid advertising, social media, content, email and analytics.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+What I Bring
+</h3>
+
+<p class="muted">
+
+Practical project experience, research skills,
+content thinking, basic analytics knowledge,
+willingness to learn and the ability to document
+work professionally.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="label">
+02 — Skills
+</div>
+
+<h2 class="title">
+Skills I can demonstrate.
+</h2>
+
+<p class="intro">
+
+These are the areas I have practiced through projects
+and training.
+
+</p>
+
+
+<div class="skills">
+
+
+<div class="skill">
+
+
+<h3>
+SEO
+</h3>
+
+<p>
+
+Keyword research, on-page SEO, technical SEO basics,
+internal linking, product SEO and backlink strategy.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Keywords
+</span>
+
+<span class="tag">
+Meta
+</span>
+
+<span class="tag">
+Sitemap
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill">
+
+
+<h3>
+Google Ads
+</h3>
+
+<p>
+
+Search campaign structure, keywords, ad copy,
+negative keywords, assets, bidding and KPI analysis.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Search
+</span>
+
+<span class="tag">
+CTR
+</span>
+
+<span class="tag">
+CPC
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill">
+
+
+
+<h3>
+Social Media
+</h3>
+
+<p>
+
+Profile optimisation, content calendars, captions,
+creative planning, audience research and paid strategy.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Instagram
+</span>
+
+<span class="tag">
+Facebook
+</span>
+
+<span class="tag">
+Content
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill">
+
+
+<h3>
+Email Marketing
+</h3>
+
+<p>
+
+Mailchimp newsletters, welcome flows,
+abandoned-cart planning, segmentation and A/B testing.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Mailchimp
+</span>
+
+<span class="tag">
+Automation
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill">
+
+<h3>
+E-commerce
+</h3>
+
+<p>
+
+Shopify product listings, descriptions, categories,
+store content and conversion-focused customer journeys.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+Shopify
+</span>
+
+<span class="tag">
+CRO Basics
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill">
+
+
+<h3>
+Analytics
+</h3>
+
+<p>
+
+Understanding CTR, CPC, conversion rate, ROAS,
+organic traffic, rankings and email performance.
+
+</p>
+
+<div class="tags">
+
+<span class="tag">
+GA4
+</span>
+
+<span class="tag">
+GSC
+</span>
+
+<span class="tag">
+ROAS
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="label">
+03 — Featured Case Study
+</div>
+
+<h2 class="title">
+EcoNest — 360° E-commerce Growth Project
+</h2>
+
+<p class="intro">
+
+A portfolio project for a sustainable lifestyle
+e-commerce brand. The project combines SEO,
+Google Ads, social media, email marketing,
+reputation management and analytics.
+
+</p>
+
+
+<!-- PROJECT OVERVIEW -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Project Overview
+</h3>
+
+<p class="muted">
+Sustainable Lifestyle • D2C E-commerce
+</p>
+
+</div>
+
+<span>
+PORTFOLIO PROJECT
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+Objective
+</h3>
+
+<p class="muted">
+
+Build a digital acquisition and retention system
+designed to increase online acquisitions and
+strengthen brand presence.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Target Audience
+</h3>
+
+<p class="muted">
+
+Urban professionals aged 25–45 interested in
+premium, sustainable lifestyle products.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Project Deliverables
+</h4>
+
+<div class="tags">
+
+<span class="tag">SEO</span>
+<span class="tag">Google Ads</span>
+<span class="tag">Social Media</span>
+<span class="tag">Mailchimp</span>
+<span class="tag">Shopify</span>
+<span class="tag">ORM</span>
+<span class="tag">Analytics</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     SEO
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+SEO Implementation
+</h3>
+
+<p class="muted">
+Research → Optimisation → Authority
+</p>
+
+</div>
+
+<span>
+SEO
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+What I did
+</h3>
+
+<ul>
+
+<li>
+Researched high-intent long-tail
+and informational keywords.
+</li>
+
+<li>
+Prepared product page title,
+meta description and heading recommendations.
+</li>
+
+<li>
+Planned internal linking between products,
+categories and blogs.
+</li>
+
+<li>
+Created technical SEO checklist for speed,
+broken links and sitemap.
+</li>
+
+<li>
+Prepared backlink strategy using guest posts,
+niche blogs, directories and resource pages.
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+KPIs
+</h3>
+
+<ul>
+
+<li>
+Organic clicks
+</li>
+
+<li>
+Impressions
+</li>
+
+<li>
+Keyword positions
+</li>
+
+<li>
+Organic CTR
+</li>
+
+<li>
+Indexed pages
+</li>
+
+<li>
+Referring domains
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- SEO IMAGES -->
+
+<div class="proof">
+
+<h4>
+SEO Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-10 165418.png"
+alt="SEO keyword research screenshot"
+>
+
+<div class="image-label">
+Keyword Research
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-11 141826.png"
+alt="Google Search Console screenshot"
+>
+
+<div class="image-label">
+Google Search Console
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/on-page-seo.png"
+alt="On page SEO screenshot"
+>
+
+<div class="image-label">
+On-Page SEO
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     GOOGLE ADS
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Google Ads / SEM
+</h3>
+
+<p class="muted">
+Campaign → Keywords → Ads → Optimisation
+</p>
+
+</div>
+
+<span>
+PAID SEARCH
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+What I did
+</h3>
+
+<ul>
+
+<li>
+Structured campaigns around Brand,
+Generic Category and Competitor themes.
+</li>
+
+<li>
+Prepared high-intent search keywords.
+</li>
+
+<li>
+Created responsive search ad copy.
+</li>
+
+<li>
+Built negative keyword lists such as
+free, cheap and wholesale.
+</li>
+
+<li>
+Planned sitelinks, callouts and
+structured snippets.
+</li>
+
+<li>
+Planned conversion-focused bidding
+and KPI tracking.
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+KPIs
+</h3>
+
+<ul>
+
+<li>
+CTR
+</li>
+
+<li>
+CPC
+</li>
+
+<li>
+Conversions
+</li>
+
+<li>
+CPA
+</li>
+
+<li>
+Conversion Rate
+</li>
+
+<li>
+ROAS
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Google Ads Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-10 174527.png"
+alt="Google Ads campaign screenshot"
+>
+
+<div class="image-label">
+Campaign Structure
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-10 175214.png"
+alt="Google Ads keywords screenshot"
+>
+
+<div class="image-label">
+Keywords
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-10 175637.png"
+alt="Google Ads ad copy screenshot"
+>
+
+<div class="image-label">
+Ad Copy / Assets
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     SOCIAL MEDIA
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Social Media Marketing
+</h3>
+
+<p class="muted">
+Content → Audience → Engagement
+</p>
+
+</div>
+
+<span>
+SOCIAL
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+What I did
+</h3>
+
+<ul>
+
+<li>
+Created EcoNest Instagram/Facebook presence.
+</li>
+
+<li>
+Optimised bio, profile information and CTA.
+</li>
+
+<li>
+Planned a 30-day content calendar.
+</li>
+
+<li>
+Created educational, product and
+engagement content ideas.
+</li>
+
+<li>
+Prepared captions, CTAs and hashtag strategy.
+</li>
+
+<li>
+Planned audience and retargeting strategy.
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Content Pillars
+</h3>
+
+<div class="tags">
+
+<span class="tag">
+Sustainability
+</span>
+
+<span class="tag">
+Products
+</span>
+
+<span class="tag">
+UGC
+</span>
+
+<span class="tag">
+Lifestyle
+</span>
+
+<span class="tag">
+Offers
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Social Media Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/instagram-profile.png"
+alt="Instagram profile screenshot"
+>
+
+<div class="image-label">
+Instagram Profile
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/social-posts.png"
+alt="Social media posts screenshot"
+>
+
+<div class="image-label">
+Posts / Reels
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/content-calendar.png"
+alt="Social media content calendar screenshot"
+>
+
+<div class="image-label">
+30-Day Content Calendar
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     EMAIL MARKETING
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Email Marketing
+</h3>
+
+<p class="muted">
+Acquire → Nurture → Recover → Retain
+</p>
+
+</div>
+
+<span>
+EMAIL
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+What I did
+</h3>
+
+<ul>
+
+<li>
+Created EcoNest newsletter campaigns in Mailchimp.
+</li>
+
+<li>
+Planned a 3-part automated welcome sequence.
+</li>
+
+<li>
+Planned a 2-step abandoned-cart recovery flow.
+</li>
+
+<li>
+Segmented Active Buyers and Prospects.
+</li>
+
+<li>
+Prepared curiosity vs discount
+subject-line A/B tests.
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+KPIs
+</h3>
+
+<ul>
+
+<li>
+Open Rate
+</li>
+
+<li>
+Click Rate
+</li>
+
+<li>
+Unsubscribe Rate
+</li>
+
+<li>
+Conversion Rate
+</li>
+
+<li>
+Revenue per Email
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Email Marketing Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/mailchimp-newsletter.png"
+alt="Mailchimp newsletter screenshot"
+>
+
+<div class="image-label">
+Newsletter
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/email-automation.png"
+alt="Email automation screenshot"
+>
+
+<div class="image-label">
+Automation Flow
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/email-segmentation.png"
+alt="Email segmentation screenshot"
+>
+
+<div class="image-label">
+Segmentation
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     SHOPIFY
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Shopify E-commerce
+</h3>
+
+<p class="muted">
+Store → Products → Content → Conversion
+</p>
+
+</div>
+
+<span>
+E-COMMERCE
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+What I did
+</h3>
+
+<ul>
+
+<li>
+Created and structured the EcoNest
+e-commerce store.
+</li>
+
+<li>
+Added sustainable product listings.
+</li>
+
+<li>
+Created product titles, descriptions
+and pricing.
+</li>
+
+<li>
+Organised product categories.
+</li>
+
+<li>
+Worked on customer journey and
+conversion-focused content.
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Conversion Thinking
+</h3>
+
+<p class="muted">
+
+Clear product information, strong CTAs,
+useful categories, trust content and
+a simple purchase journey.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Shopify Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/shopify-home.png"
+alt="Shopify store homepage screenshot"
+>
+
+<div class="image-label">
+Store Homepage
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/shopify-product.png"
+alt="Shopify product listing screenshot"
+>
+
+<div class="image-label">
+Product Listing
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/shopify-products.png"
+alt="Shopify products screenshot"
+>
+
+<div class="image-label">
+Product Catalogue
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ANALYTICS
+========================= -->
+
+<div class="case">
+
+<div class="case-head">
+
+<div>
+
+<h3>
+Analytics & KPI Reporting
+</h3>
+
+<p class="muted">
+Track → Understand → Optimise
+</p>
+
+</div>
+
+<span>
+ANALYTICS
+</span>
+
+</div>
+
+
+<div class="case-body">
+
+<div class="case-grid">
+
+<div>
+
+<h3>
+Metrics I understand
+</h3>
+
+<ul>
+
+<li>
+Organic traffic
+</li>
+
+<li>
+Keyword rankings
+</li>
+
+<li>
+CTR
+</li>
+
+<li>
+CPC
+</li>
+
+<li>
+Conversion rate
+</li>
+
+<li>
+CPA
+</li>
+
+<li>
+ROAS
+</li>
+
+<li>
+Email open/click rate
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+My optimisation mindset
+</h3>
+
+<p class="muted">
+
+I look at the complete funnel rather than
+only one metric:
+
+<br><br>
+
+<strong>
+Traffic → Click → Landing Page → Conversion → Retention
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="proof">
+
+<h4>
+Analytics Proof / Screenshots
+</h4>
+
+
+<div class="proof-grid">
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/ga4.png"
+alt="Google Analytics 4 screenshot"
+>
+
+<div class="image-label">
+GA4
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images/Screenshot 2026-08-11 141351.png"
+alt="Google Search Console screenshot"
+>
+
+<div class="image-label">
+Search Console
+</div>
+
+</div>
+
+
+<div
+class="proof-image"
+onclick="openImage(this)"
+>
+
+<img
+src="images\Screenshot 2026-08-11 141826.png"
+alt="Digital marketing report screenshot"
+>
+
+<div class="image-label">
+KPI Report
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section id="process">
+
+<div class="container">
+
+<div class="label">
+04 — My Process
+</div>
+
+<h2 class="title">
+How I approach a new business.
+</h2>
+
+<p class="intro">
+
+A simple framework I can use when working
+with an employer or client.
+
+</p>
+
+
+<div class="timeline">
+
+
+<div class="step">
+
+<div class="num">
+01
+</div>
+
+<div>
+
+<h3>
+Understand
+</h3>
+
+<p class="muted">
+
+Business model, products, customers,
+competitors and goals.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">
+02
+</div>
+
+<div>
+
+<h3>
+Research
+</h3>
+
+<p class="muted">
+
+Keyword research, audience research,
+competitor analysis and channel opportunities.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">
+03
+</div>
+
+<div>
+
+<h3>
+Build
+</h3>
+
+<p class="muted">
+
+Content, campaigns, email flows,
+product pages and tracking structure.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">
+04
+</div>
+
+<div>
+
+<h3>
+Launch
+</h3>
+
+<p class="muted">
+
+Start campaigns with controlled budgets
+and clear conversion goals.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">
+05
+</div>
+
+<div>
+
+<h3>
+Measure
+</h3>
+
+<p class="muted">
+
+Track CTR, CPC, conversions, ROAS,
+organic visibility and retention metrics.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">
+06
+</div>
+
+<div>
+
+<h3>
+Optimise
+</h3>
+
+<p class="muted">
+
+Keep what works, remove waste and test
+new creatives, keywords and offers.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TOOLS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="label">
+05 — Tools
+</div>
+
+<h2 class="title">
+Tools I have practiced.
+</h2>
+
+<p class="intro">
+
+Keep only the tools you can confidently
+discuss in an interview.
+
+</p>
+
+
+<div class="tools">
+
+<span class="tool">
+Google Ads
+</span>
+
+<span class="tool">
+Google Analytics 4
+</span>
+
+<span class="tool">
+Google Search Console
+</span>
+
+<span class="tool">
+Google Keyword Planner
+</span>
+
+<span class="tool">
+Mailchimp
+</span>
+
+<span class="tool">
+Shopify
+</span>
+
+<span class="tool">
+Meta Business Suite
+</span>
+
+<span class="tool">
+Instagram
+</span>
+
+<span class="tool">
+Facebook
+</span>
+
+<span class="tool">
+Canva
+</span>
+
+<span class="tool">
+Google Sheets
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAREER
+========================= -->
+
+<section class="resume">
+
+<div class="container">
+
+<div class="label">
+06 — Career
+</div>
+
+<h2 class="title">
+Ready for an entry-level opportunity.
+</h2>
+
+
+<div class="resume-grid">
+
+
+<div class="card">
+
+<h3>
+Education
+</h3>
+
+<p class="muted">
+12th Class
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Professional Training
+</h3>
+
+<p class="muted">
+Advanced Digital Marketing Course
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Looking For
+</h3>
+
+<p class="muted">
+Digital Marketing Internship /
+Entry-Level Role
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Strengths
+</h3>
+
+<p class="muted">
+
+Fast learner • Research • Content •
+Practical mindset • Analytics basics
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+class="contact"
+id="contact">
+
+<div class="container">
+
+<div class="label">
+07 — Contact
+</div>
+
+<h2 class="title">
+Let's work and grow together.
+</h2>
+
+<p class="intro">
+
+I’m open to Digital Marketing internships
+and entry-level opportunities.
+
+</p>
+
+
+<div
+class="btns"
+style="justify-content:center"
+>
+
+<!-- CHANGE EMAIL -->
+
+<a
+class="btn"
+href="mailto:gurpreetiim3@gmail.com"
+>
+Email Me
+</a>
+
+
+<!-- CHANGE LINKEDIN -->
+
+<a
+class="btn alt"
+href="https://www.linkedin.com/in/gurpreet-singh-8185b8414/"
+target="_blank"
+>
+LinkedIn
+</a>
+
+</div>
+
+
+<p class="note">
+
+Replace the email and LinkedIn link
+with your real details.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+© 2026 Gurpreet Singh
+•
+Digital Marketing Portfolio
+
+<br>
+
+EcoNest is a portfolio/demo project.
+Do not present demo targets as verified client results.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     FULLSCREEN IMAGE MODAL
+========================= -->
+
+<div
+class="modal"
+id="imageModal"
+onclick="closeImage(event)"
+>
+
+<span
+class="close"
+onclick="closeImage(event)"
+>
+&times;
+</span>
+
+
+<img
+id="modalImg"
+src=""
+alt=""
+>
+
+
+<div
+class="modal-caption"
+id="modalCaption">
+</div>
+
+</div>
+
+
+<!-- BACK TO TOP -->
+
+<button
+id="top"
+onclick="window.scrollTo({
+top:0,
+behavior:'smooth'
+})">
+
+↑
+
+</button>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const links =
+document.getElementById("links");
+
+document
+.querySelectorAll(".links a")
+.forEach(function(a){
+
+    a.addEventListener("click",function(){
+
+        links.classList.remove("open");
+
+    });
+
+});
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+window.addEventListener(
+"scroll",
+function(){
+
+    const topButton =
+    document.getElementById("top");
+
+    if(window.scrollY > 500){
+
+        topButton.style.display =
+        "block";
+
+    }else{
+
+        topButton.style.display =
+        "none";
+
+    }
+
+});
+
+
+/* =========================
+   FULLSCREEN IMAGE VIEWER
+========================= */
+
+function openImage(box){
+
+    const image =
+    box.querySelector("img");
+
+    const modal =
+    document.getElementById("imageModal");
+
+    const modalImage =
+    document.getElementById("modalImg");
+
+    const caption =
+    document.getElementById("modalCaption");
+
+
+    modalImage.src =
+    image.src;
+
+    modalImage.alt =
+    image.alt;
+
+
+    const label =
+    box.querySelector(".image-label");
+
+
+    if(label){
+
+        caption.textContent =
+        label.textContent;
+
+    }else{
+
+        caption.textContent =
+        image.alt;
+
+    }
+
+
+    modal.classList.add("show");
+
+
+    document.body.style.overflow =
+    "hidden";
+
+}
+
+
+/* =========================
+   CLOSE IMAGE
+========================= */
+
+function closeImage(event){
+
+    const modal =
+    document.getElementById("imageModal");
+
+
+    if(
+        event.target === modal ||
+        event.target.classList.contains("close")
+    ){
+
+        modal.classList.remove("show");
+
+        document.body.style.overflow =
+        "auto";
+
+    }
+
+}
+
+
+/* =========================
+   ESC KEY
+========================= */
+
+document.addEventListener(
+"keydown",
+function(event){
+
+    if(event.key === "Escape"){
+
+        document
+        .getElementById("imageModal")
+        .classList.remove("show");
+
+        document.body.style.overflow =
+        "auto";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
